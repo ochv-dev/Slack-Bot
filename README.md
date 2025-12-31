@@ -37,7 +37,7 @@ Si eres un compañero y quieres implementar esto, sigue estos pasos:
 
 Si estás leyendo esto porque el bot falló, se envió un sábado, o simplemente me descubrieron:
 
-> **"Profe, no diga que no lo intenté. Identifiqué un problema repetitivo (despertar, abrir Slack, escribir) y apliqué una solución tecnológica usando APIs REST, autenticación OAuth y CI/CD en la nube. ¡Técnicamente, es una aplicación práctica de lo aprendido en clase!"**
+> **"Profe, no diga que no lo intenté. Identifiqué una tarea repetitiva y quise solucionarla aplicando lo que vimos de Git y control de versiones, sumado a una investigación propia sobre GitHub Actions para automatizar procesos. ¡Más que una falta, véalo como una demostración de autoaprendizaje y proactividad!"**
 
 ---
-*Este proyecto fue realizado con fines educativos (y de eficiencia de sueño).*
+*Este proyecto fue realizado con fines educativos (y para dormir 5 minutos más).*
