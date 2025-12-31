@@ -1,0 +1,30 @@
+name: Bot de Asistencia
+
+on:
+  schedule:
+    # 30 minutos, 11 horas (UTC) = 8:30 AM Chile
+    # 1-5 = Lunes a Viernes
+    - cron: '30 11 * * 1-5'
+  
+  # Esto agrega un botón para probarlo manualmente cuando quieras
+  workflow_dispatch:
+
+jobs:
+  enviar-asistencia:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Instalar librerías
+        run: pip install requests
+
+      - name: Ejecutar script
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: python main.py
